@@ -1,4 +1,4 @@
 # OSCAR
-This is my website repository
-This is about ALL time indian oscar winners
-Author-khyati
+This is my website repository,
+<br>This is about ALL time oscar winners,<br>
+<br>Author-khyati<br>
