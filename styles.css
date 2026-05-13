@@ -1,0 +1,121 @@
+* {
+    text-align: center;
+}
+
+/* ===== GLOBAL STYLING ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+    color: #f5f5f5;
+}
+
+/* Centered container */
+.container {
+    width: 85%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+/* ===== HEADER ===== */
+h1 {
+    text-align: center;
+    font-size: 45px;
+    color: #d4af37;
+    /* Gold */
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* ===== MAIN TITLE ===== */
+.main-heading {
+    text-align: center;
+    color: #f0d98c;
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* ===== CARD GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 20px;
+    margin-left: 500px;
+}
+
+/* ===== CARD DESIGN ===== */
+
+/*Poster*/
+.poster {
+    width: 500px;
+}
+
+.card {
+    background: rgba(34, 34, 34, 0.7);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+    backdrop-filter: blur(4px);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* ===== POSTER IMAGE ===== */
+.card img {
+    width: 70px;
+    height: 90px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 2px solid #d4af37;
+}
+
+/* ===== TEXT INSIDE CARD ===== */
+.card h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #d4af37;
+}
+
+.card p {
+    margin: 3px 0;
+    font-size: 14px;
+    color: #e5e5e5;
+}
+
+/* ===== RANK NUMBER ===== */
+.rank {
+    font-weight: bold;
+    font-size: 22px;
+    color: #ffdd75;
+}
+
+/* ===== SMALL SCREEN FIX ===== */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
